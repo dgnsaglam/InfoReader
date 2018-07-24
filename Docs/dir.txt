@@ -1,0 +1,17 @@
+[Top:An Introduction] 
+
+The GNU Project distributes most of its on-line manuals in the "Info
+format", which you read using an "Info reader".  You are probably using
+an Info reader to read this now.
+
+   There are two primary Info readers: `info', a stand-alone program
+designed just to read Info files, and the `info' package in GNU Emacs,
+a general-purpose editor.  At present, only the Emacs reader supports
+using a mouse.
+    For getting started type "m Getting Started" an then <RET>.
+* Menu:
+
+* ([G_S.txt::1]Getting Started)         Getting started using an Info reader.
+* ([E_I.txt::1]Expert Info)             Info commands for experts.
+* ([E_I.txt::2]Finish)                  Quitting and some information.
+%%

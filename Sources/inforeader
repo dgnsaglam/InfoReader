@@ -1,0 +1,14 @@
+#ifndef INFOREADER_HXX
+#define INFOREADER_HXX
+using namespace std;
+namespace hw2{
+  info_tree* readfile(string* fname,info_tree* node);
+  void Adjust_Nodes(string* link,info_tree* up,char type);
+  char disp(info_tree* dis);
+  info_tree* command_m(info_tree* subject,string* searched); 
+  info_tree* command_n(info_tree* subject);
+  info_tree* command_p(info_tree* subject);
+  info_tree* command_g(info_tree* subject,string* searched);
+  info_tree* command_u(info_tree* subject);
+}
+#endif

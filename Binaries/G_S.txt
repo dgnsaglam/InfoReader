@@ -1,0 +1,142 @@
+[1: Getting Started]
+
+This first part of this Info manual describes how to get around inside
+of Info.  The second part of the manual describes various advanced Info
+commands, and how to write an Info as distinct from a Texinfo file.
+The third part briefly explains how to generate Info files from Texinfo
+files.
+
+* Menu:
+
+* ([::1.1]Help-Small-Screen)   Starting Info on a Small Screen.
+* ([::1.2]Help)                How to use Info.
+* ([::1.3]Help-P)              Returning to the Previous node.
+* ([::1.4]Help-Link)           Following cross-references.
+%%
+
+[1.1: Help-Small-Screen]
+
+Since your terminal has a relatively small number of lines on its
+screen, it is necessary to give you special advice at the beginning.
+
+   If you see the text `--All----' near the bottom right corner of the
+screen, it means the entire text you are looking at fits on the screen.
+If you see `--Top----' instead, it means that there is more text below
+that does not fit.  To move forward through the text and see another
+screen full, press "f".  To move back up, press the "b"
+   Here are 40 lines of junk, so you can try f and b and see
+what they do.  At the end are instructions of what you should do next.
+
+This is line 20
+This is line 21
+This is line 22
+This is line 23
+This is line 24
+This is line 25
+This is line 26
+This is line 27
+This is line 28
+This is line 29
+This is line 30
+This is line 31
+This is line 32
+This is line 33
+This is line 34
+This is line 35
+This is line 36
+This is line 37
+This is line 38
+This is line 39
+This is line 40
+This is line 41
+This is line 42
+This is line 43
+This is line 44
+This is line 45
+This is line 46
+This is line 47
+This is line 48
+This is line 49
+This is line 50
+This is line 51
+This is line 52
+This is line 53
+This is line 54
+This is line 55
+This is line 56
+This is line 57
+This is line 58
+This is line 59
+
+So now type an `n'--just one character; don't type the 
+quotes and don't type the Return key
+afterward--to get to the normal start of the course.
+%%
+
+[1.2: How to use Info]
+
+You are talking to the program Info, for reading documentation.
+
+
+   Right now you are looking at one "Node" of Information.  A node
+contains text describing a specific topic at a specific level of
+detail.  This node's topic is "how to use Info".  The mode line says
+that this is node `Help' in the file `info'.
+
+   The top line of a node is its "header".  This node's header (look at
+it now) says that the `Next' node after this one is the node called
+`Help-P'.  An advanced Info command lets you go to any node whose name
+you know.  In the stand-alone Info reader program, the header line
+shows the names of this node and the info file as well.  In Emacs, the
+header line is duplicated in a special typeface, and the duplicate
+remains at the top of the window all the time even if you scroll
+through the node.
+
+   Besides a `Next', a node can have a `Previous' link, or an `Up'
+link, or both.  As you can see, this node has all of these links.
+
+   Now it is time to move on to the `Next' node, named `Help-P'.
+
+  Type `n' to move there.  Type just one character;
+%%
+
+[1.3: Help-P]
+
+This node is called `Help-P'.  The `Previous' node, as you see, is
+`Help', which is the one you just came from using the `n' command.
+Another `n' command now would take you to the next node, `Help-^L'.
+
+   But do not type `n' yet.  First, try the `p' command, or
+   (in Emacs) click the middle mouse button on the `Prev' link.
+   That takes you to the `Previous' node.  Then use `n' to
+   return here.
+
+   If you read this in Emacs, you will see an `Info' item in the menu
+bar, close to its right edge.  Clicking the mouse on the `Info'
+menu-bar item opens a menu of commands which include `Next' and `Prev'
+(and also some others which you didn't yet learn about).
+
+   This all probably seems insultingly simple so far, but _please
+don't_ start skimming.  Things will get complicated soon enough!  Also,
+please do not try a new command until you are told it is time to.  You
+could make Info skip past an important warning that was coming up.
+
+   Now do an `n', or (in Emacs) click the middle mouse button on
+   the `Next' link, to get to the node `Help-^L' and learn more.
+%%
+
+[1.4: Help-Link]
+
+ There can exist some links to other topics of the documentation .If you
+ want to follow this links you have to use "g " command .After typing "g"
+ you have to write the name of the link .There is no abbreviation accepted .
+ You can recognize a link because it is written in brackets and in 
+ upperlevel.For example ([::1.4.1]Example Link) is a link to one of the nodes
+ in the documentation system.There can be some links to other nodes in a
+ different document too like ([E_I.txt::1]To top of other document).
+%%
+
+[1.4.1: Example Link]
+
+   You have reached here by using a link in upper level.  
+%%

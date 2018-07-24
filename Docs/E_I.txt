@@ -1,0 +1,79 @@
+[1: Expert Info]
+
+This chapter describes various Info commands for experts.This commands
+make easier to use Info.
+
+* Menu:
+
+* ([::1.1]Advanced)            Advanced Info commands: g,and 1 - 9.
+%%
+
+[1.1:Advanced]
+
+Here are some more Info commands that make it easier to move around.
+`g' goes to a node by name
+--------------------------
+If you know a node's name, you can go there by typing `g', the name,
+and <RET>.  Thus, `g Top<RET>' would go to the node called `Top' in this
+file. 
+`g Advanced<RET>' would come back here.  `g' in Emacs runs the command
+`Info-goto-node'.
+   Unlike `m', `g' does not allow the use of abbreviations.  But it
+does allow completion.
+   To go to a node in another file, you can include the file name in the
+node name by putting it at the front, in parentheses.  Thus,
+`g(dir)Top<RET>' would go to the Info Directory node, which is the node
+`Top' in the Info file `dir'.  Likewise, `g(emacs)Top<RET>' goes to the
+top node of the Emacs manual.
+`1'-`9' choose a menu subtopic by its number
+--------------------------------------------
+If you begrudge each character of type-in which your system requires,
+you might like to use the commands `1', `2', `3', `4', ..., `9'.  They
+are short for the `m' command together with a name of a menu subtopic.
+`1' goes through the first item in the current node's menu; `2' goes
+through the second item, etc.  
+%%
+
+[1.2:Info Search]
+
+1.2 How to search Info documents for specific subjects
+======================================================
+
+The commands which move between and inside nodes allow you to read the
+entire manual or its large portions.  But what if you need to find some
+information in the manual as fast as you can, and you don't know or
+don't remember in what node to look for it?  This need arises when you
+use a manual as a "reference", or when it is impractical to read the
+entire manual before you start using the programs it describes.
+
+   Info has powerful searching facilities that let you find things
+quickly.  You can search either the manual indices or its text.
+
+   Since most subjects related to what the manual describes should be
+indexed, you should try the index search first.  The `i' command
+prompts you for a subject and then looks up that subject in the
+indices.  If it finds an index entry with the subject you typed, it
+goes to the node to which that index entry points.  You should browse
+through that node to see whether the issue you are looking for is
+described there.  If it isn't, type `,' one or more times to go through
+additional index entries which match your subject.
+%%
+
+[2:Finish]
+
+To get out of Info, back to what you were doing before, type `q' for
+"Quit". 
+   This is the end of the basic course on using Info.  You have learned
+how to move in an Info document, and how to follow menus and cross
+references.  This makes you ready for reading manuals top to bottom, as
+new users should do when they learn a new package.
+
+   Another set of Info commands is useful when you need to find
+something quickly in a manual--that is, when you need to use a manual
+as a reference rather than as a tutorial.  We urge you to learn these
+search commands as well.  
+If you want to do that now, follow this link ([::1.2]Info Search).
+%%  
+
+
+

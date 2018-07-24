@@ -1,0 +1,57 @@
+#ifndef INFO_TREE_HXX
+#define INFO_TREE_HXX
+
+#include <vector>
+#include <string>
+using namespace std;
+namespace hw2{
+  class info_tree
+  { 
+   typedef info_tree* Info_Tree;   
+   public:
+   info_tree();
+   ~info_tree();
+   info_tree(int addr,string* n_n,string* d_n,int type);
+   info_tree(const info_tree&); 
+   Info_Tree Get_Subtree(string* dis_n,int type);
+   Info_Tree Get_next(); 
+   Info_Tree Get_up();
+   Info_Tree Get_prev(); 
+   void Set_Subtree(info_tree* item);  
+   void Set_Node_adress(int addr);
+   void Set_Node_name(string* name);
+   void Set_node_disname(string* disname);
+   void Set_node_docname(string* docname); 
+   string Get_disname();
+   string Get_docname();
+   string Get_name();
+   int Get_adress();
+   private:
+        class info_node {
+          public:
+            info_node(int addr,string n_n,string d_n) :
+            addr(addr),index(-1),node_n(n_n),doc_n(d_n),_up(NULL),dis_n("?"),type(-1)
+            {
+            } // end of info_node(int,string,string) constructor
+            info_node(info_node* item)
+            {
+                addr=item->addr;
+                index=item->index;
+                node_n=item->node_n;
+                doc_n=item->doc_n;
+                dis_n=item->dis_n;
+                _up=new info_tree(*item->_up);
+                type=item->type;
+            }//end of info_node(info_node*) constructor
+            int addr,index;
+            char type;
+            info_tree *_up;
+            string dis_n,doc_n,node_n;
+        }; // end of class info_node 
+   private:
+   info_node *root;
+   vector<Info_Tree> sub_info_tree;
+   };//end of class definition
+  }
+
+#endif
